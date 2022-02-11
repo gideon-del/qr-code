@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+:root {
+  --font-size: 15px;
+  --font-weight: 400;
+  --l-font-wieht: 700;
+}
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#card {
+  width: 330px;
+  height: 470px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  transform: translateY(-10px);
+  word-wrap: break-word;
+}
+img {
+  object-fit: cover;
+  padding-top: 10px;
+  width: 310px;
+  height: 310px;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  position: relative;
+  right: auto;
+  left: auto;
+}
+h1 {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 0 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  /*border: 2px solid red;*/
+  word-wrap: break-word;
+}
+p {
+  font-size: 15px;
+  font-weight: var(--font-weight);
+  font-weight: 400;
+  padding: 0 40px;
+  padding-top: 10px;
+  color: hsl(220, 15%, 55%);
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: blue;
+}
+.info {
+  position: absolute;
+  background-color: black;
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 300px;
+}
+.info a {
+  color: white;
+}
+.info a:hover {
+  color: blue;
+}
+@media screen and (max-width: 768px) {
+  #card {
+    width: 300px;
+    height: 450px;
+  }
+  img {
+    object-fit: cover;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  h1 {
+    color: hsl(218, 44%, 22%);
+    padding: 0 50px;
+    font-weight: 1000;
+    font-size: 1rem;
+  }
+}
